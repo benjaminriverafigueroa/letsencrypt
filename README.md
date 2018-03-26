@@ -40,13 +40,13 @@ To be sure, the records are working as expected, please run the following comman
 You should see a response like this:
 
 	Non-authoritative answer:
-_acme-challenge.your_domain_name   text =
+	_acme-challenge.your_domain_name   text =
 
         "nAESxPeYEf2C-Wrm0uEO-HDs8La5HxmFladKfBOxasE"
 		
 
-Non-authoritative answer:
-_acme-challenge.www.your_domain_name       text =
+	Non-authoritative answer:
+	_acme-challenge.www.your_domain_name       text =
 
         "rpyL3-jF3wMk9DDlInmywd5bh-VU0FJWysZRcXARQDc"
 
@@ -68,20 +68,20 @@ Now let's start with the certificate generation.
 
 4- Fill out the information below with your values, replacing only <values>:
 
-le32.exe 
---key <key_file_name>.key
---csr <csr_file_name>.csr
---crt <domain_certificate_name_output>.crt
---email <"your@emailaddress">
---domains  "<*.your_domain_name.extesion>" 
---handle-as dns 
---api 2 
---live
---generate-missing
+	le32.exe 
+	--key <key_file_name>.key
+	--csr <csr_file_name>.csr
+	--crt <domain_certificate_name_output>.crt
+	--email <"your@emailaddress">
+	--domains  "<*.your_domain_name.extesion>" 
+	--handle-as dns 
+	--api 2 
+	--live
+	--generate-missing
 
 5- Converted to a single line:
 
-le32.exe --key <key_file_name>.key --csr <csr_file_name>.csr --crt <domain_certificate_name_output>.crt --email <"your@emailaddress"> --domains  "<*.your_domain_name.extesion>" --handle-as dns --api 2 --live --generate-missing
+	le32.exe --key <key_file_name>.key --csr <csr_file_name>.csr --crt <domain_certificate_name_output>.crt --email <"your@emailaddress"> --domains  "<*.your_domain_name.extesion>" --handle-as dns --api 2 --live --generate-missing
 	
 6- The application will ask you to add the values to the previously created TXT Records.  Please make sure that you follow the 
    previous steps (Creating the TXT DNS Records).
@@ -127,6 +127,11 @@ For online certificate issuance with UI (Please not wildcard's can't be generate
 To verify certificate issuance (COMODO Tool):
 
 	https://crt.sh/
+	
+Win32/64 Portable ZeroSSL client for Let's Encrypt:
+
+	https://github.com/do-know/Crypt-LE/releases
+
 	
 
 
