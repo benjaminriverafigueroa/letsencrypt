@@ -1,5 +1,8 @@
 # letsencrypt
 
+	windows executable file: le32.exe can be found on the following repository:
+	https://github.com/do-know/Crypt-LE/releases
+
 To ensure a straight forward process please do the following Pre-Staging steps:
 
 
